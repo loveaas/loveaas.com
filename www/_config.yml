@@ -1,3 +1,5 @@
+theme: jekyll/minima
+remote-theme: jekyll/minima
 sass:
   sass_dir: _sass
   style: compressed
