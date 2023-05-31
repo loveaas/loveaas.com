@@ -1,0 +1,170 @@
+---
+layout: default
+---
+
+<div id="wrap-content" class="home">
+    <div class="loader"><i>Loading...</i></div>
+    <div class="project">
+        {%- if page.title -%}
+        <h1 class="page-heading">
+            🌱 <span id="project-name">...</span>
+        </h1>
+        <a id="source-code-link" class="no-emoji">⚓ Source code</a>
+        <br><br>
+        <h2>ℹ️ About </h2>
+        <div id="project-description"></div>
+
+        <br>
+        <h2>🙏 Needs</h2>
+        <div id="project-needs"></div>
+
+        <br>
+        <h2>🧑 Assignments</h2>
+        <div id="project-assignments"></div>
+
+
+        <br>
+        <h2>🛟 Donations</h2>
+        <div id="project-payment-history"></div>
+
+        <br>
+        <h2>🫶 cknowledgements</h2>
+        <div id="project-credits"></div>
+        {%- endif -%}
+        {{ content }}
+    </div>
+    <div class="not-found">
+        <h2>Project not found</h2>
+        <p>Sorry, we couldn't find the project you were looking for.</p>
+    </div>
+</div>
+
+<script>
+    (async function () {
+        var projectSlug = window.location.search.split('?slug=')[1];
+        var response = await fetch('/data/' + projectSlug + '.json');
+        if (response.status === 404) {
+            document.getElementById('project-name').innerHTML = 'Project not found';
+            document.getElementById('wrap-content').classList.add('not-found');
+            return;
+        } else {
+            document.getElementById('wrap-content').classList.add('loaded');
+        }
+        var data = await response.json();
+        document.getElementById('project-name').innerHTML = data.name;
+        document.getElementById('project-description').innerHTML = data.description;
+        document.getElementById('source-code-link').setAttribute('href', data.sourceCodeLink);
+
+        var assignments = data.assignments;
+        var assignmentsHtml = '';
+        for (var i in assignments) {
+
+            assignmentsHtml += '<div class="assignment">';
+            assignmentsHtml += '<h3>' + assignments[i].name + '</h3>';
+            assignmentsHtml += '<p>' + assignments[i].description + '</p>';
+            assignmentsHtml += '<ul>';
+            for (var j in assignments[i].people) {
+                var person = assignments[i].people[j];
+                if (person.link) {
+                    assignmentsHtml += '<li><a target="_blank" href="' + person.link + '">' + person.name + '</a>' + ' (since: '+ person.since +')' + (person.description ? ' - ' + person.description : '') + '</a></li>';
+                } else {
+                    assignmentsHtml += '<li>' + person.name + ' (since: '+ person.since +')' + (person.description ? ' - ' + person.description : '') + '</li>';
+                }
+
+            }
+            assignmentsHtml += '</ul>';
+            assignmentsHtml += '</div>';
+        }
+
+        document.getElementById('project-assignments').innerHTML = assignmentsHtml;
+
+        var needsHtml = '';
+        needsHtml += '<ol class="needs">';
+        for (var i in data.needs) {
+
+            needsHtml += '<li class="need">';
+            needsHtml += '<p>' + data.needs[i].description + '</p>';
+            if(data.needs[i].when){
+                needsHtml += '<p>⌛ ' + data.needs[i].when + '</p>';
+            }
+            needsHtml += '</li>';
+        }
+        needsHtml += '</ol>';
+
+        document.getElementById('project-needs').innerHTML = needsHtml;
+
+        var payments = '';
+        payments += '<ul class="payment-history">';
+        for (var i in data.payments) {
+
+            var p = data.payments[i];
+            payments += '<li>';
+            payments += '<p><b>/ ' + p.date +' / <a href="'+p.byLink+'" target="_blank">'+p.by+'</a> / ' + p.currency + ' ' + p.amount + '</b> > ' + p.description + ' <a href="https://example.com">(More info)</a></p>';
+
+            payments += '</li>';
+        }
+        payments += '</ul>';
+
+        document.getElementById('project-payment-history').innerHTML = payments;
+
+
+
+        var credits = '';
+        credits += '<ul class="credits">';
+        for (var i in data.credits) {
+
+            var c = data.credits[i];
+            credits += '<li>';
+            credits += '<span><b> / ' + p.date +' / <a href="'+c.link+'" target="_blank">'+c.name+'</a> / </b> > ' + c.description + '</span>';
+            credits += '</li>';
+        }
+        credits += '</ul>';
+
+        document.getElementById('project-credits').innerHTML = credits;
+
+    })();
+</script>
+<style>
+    #wrap-content .not-found,
+    #wrap-content .project {
+        display: none;
+    }
+
+    #wrap-content .project a:not(.no-emoji):before {
+        content: "🔗";
+        display: inline-block;
+    }
+
+    #wrap-content.loaded .project {
+        display: block;
+    }
+
+    #wrap-content.loaded .loader {
+        display: none;
+    }
+
+    #wrap-content.not-found .project,
+    #wrap-content.not-found .loader {
+        display: none;
+    }
+
+    #wrap-content.not-found .not-found {
+        display: block;
+    }
+    h3{
+        font-weight: bold;
+    }
+
+    ul.credits{
+        list-style-type: none;
+    }
+    ul.credits li:before {
+        content: "❤";
+        display: inline-block;
+    }
+
+    #source-code-link{
+        font-size: 20px;
+    }
+
+</style>

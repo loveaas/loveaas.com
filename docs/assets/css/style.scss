@@ -1,8 +1,6 @@
 ---
 ---
-
-@import "{{ site.theme }}";
-
-body{
-  background-color: blue;
-}
+//
+//@import
+//"minima/skins/{{ site.minima.skin | default: 'classic' }}",
+//"minima/initialize";
