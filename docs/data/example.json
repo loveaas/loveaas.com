@@ -11,7 +11,7 @@
       "people": [
         {
           "name": "John Doe",
-          "link": "https://www.google.com",
+          "link": "https://www.example.com",
           "since": "2018-01-01",
           "description": "Main owner of the hosting account"
         },
@@ -35,7 +35,7 @@
         {
           "name": "Mike Dyke",
           "since": "2023-04-01",
-          "link": "https://www.google.com"
+          "link": "https://www.example.com"
         }
       ]
     }
@@ -62,7 +62,7 @@
       "link": "https://example.com",
       "status": "paid",
       "by": "John Doe",
-      "byLink": "https://www.google.com"
+      "byLink": "https://www.example.com"
     },
     {
       "date": "2018-01-01",
@@ -72,7 +72,7 @@
       "link": "https://example.com",
       "status": "paid",
       "by": "John Doe",
-      "byLink": "https://www.google.com"
+      "byLink": "https://www.example.com"
     }
   ],
   "credits": [

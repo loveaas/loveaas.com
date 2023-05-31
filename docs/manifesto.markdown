@@ -1,7 +1,7 @@
 ---
 layout: page
 title: The "Love as a Service" Manifesto v1
-menu: Manifesto
+menu: 📄 Manifesto
 permalink: /manifesto/
 ---
 

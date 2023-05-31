@@ -128,7 +128,7 @@ wants to join the ❤aaS community, but the community can decide on its destiny 
 another place. It is not owned by anyone, it is owned by the community. Any similar projects and directories are
 welcomed to join the ❤aaS network.
 
-## Wrapping up
+## How does it sound to you?
 
 This is how the ❤aaS philosophy is different from the traditional tech model, serving as a guiding light for all ❤aaS
 projects in the service of humanity.

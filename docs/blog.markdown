@@ -1,6 +1,6 @@
 ---
 title: Blog
 permalink: /blog/
-menu: Blog
+menu: 📰 Blog
 layout: blog
 ---
