@@ -1,0 +1,72 @@
+.template-projects{
+  h3{
+    font-weight: bold;
+  }
+  #source-code-link{
+    font-size: 20px;
+  }
+  .not-found,
+  .project {
+    display: none;
+  }
+
+  .project a:not(.no-emoji):before {
+    content: "🔗";
+    display: inline-block;
+  }
+
+  &.loaded .project {
+    display: block;
+  }
+
+  &.loaded .loader {
+    display: none;
+  }
+
+  &.not-found .project,
+  &.not-found .loader {
+    display: none;
+  }
+
+  &.not-found .not-found {
+    display: block;
+  }
+  .tech-description{
+    padding-top: 17px;
+  }
+  .credits, .payment-history, .tech, .kudos, .news {
+    list-style-type: none;
+    li{
+      padding-bottom: 15px;
+      span{
+        b:before {
+          content: "❤";
+          display: inline-block;
+        }
+        b.donation:before{
+          content: "🙏";
+          display: inline-block;
+        }
+        b.kudos:before{
+          content: "👏";
+          display: inline-block;
+        }
+        b.tech:before{
+          content: "🛠";
+          display: inline-block;
+        }
+        b.news:before{
+          content: "📃";
+          display: inline-block;
+        }
+        b:first-of-type {
+          border: 1px solid;
+          padding: 2px 10px;
+          margin-right: 10px;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+

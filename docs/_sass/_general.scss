@@ -1,0 +1,77 @@
+body{
+  background: linear-gradient(to bottom, $color_logo_text 0%, white 100px);
+  background-repeat: no-repeat;
+  background-attachment: absolute;
+}
+
+header a.site-title:hover {
+  text-decoration: none;
+}
+
+header.site-header {
+  border-top-color: $color_logo_text;
+  border-bottom-color: $color_logo_text;
+  background: white;
+  .wrapper {
+   display: flex;
+    align-items: center;
+    .logo img{
+      width: 100%;
+    }
+    .site-title{
+      color: $color_main;
+      font-weight: bold;
+     padding-left: 20px;
+    }
+    .site-nav{
+      flex: 1;
+      text-align: right;
+      .page-link{
+        color: $color_main;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+
+.post-content strong {
+  white-space: pre;
+}
+.page-content {
+  color: #484747;
+}
+h1 {
+  font-weight: bold;
+  padding: 40px 0;
+}
+h1,h2, h3, h4, h5, h6 {
+  color: $color_heading_text;
+}
+table th{
+  background-color: #f8f1f3;
+}
+table td{
+  min-width: 230px;
+}
+table tr:nth-child(even) {
+  background-color: #fff9fb;
+}
+pre, code{
+  background-color: #f8f2f5;
+}
+a{
+  font-weight: bold;
+  color: $color_main;
+  text-decoration: none;
+  &:visited, &:hover, &:active {
+    color: $color_logo_text;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .site-nav .menu-icon > svg {
+    fill: $color_logo_text;
+  }
+}

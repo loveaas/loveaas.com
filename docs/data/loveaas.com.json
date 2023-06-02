@@ -1,0 +1,152 @@
+{
+  "name": "loveaas.com",
+  "version": "1.0",
+  "description": "This is the first official ❤aaS informative website and the first directory for ❤aaS projects.",
+  "sourceCodeLink": "https://github.com/loveaas/loveaas.com",
+  "link": "https://loveaas.com",
+  "owners": [
+    {
+      "name": "Github account",
+      "description": "",
+      "people": [
+        {
+          "name": "gradosevic",
+          "link": "https://github.com/gradosevic",
+          "since": "2023-05-26",
+          "description": "Main owner of the ❤aaS Github account"
+        }
+      ]
+    },
+    {
+      "name": "Domain",
+      "description": "Domain needed for the project loveaas.com, bought on NameCheap and linked to my own Cloudflare account",
+      "people": [
+        {
+          "name": "gradosevic",
+          "link": "https://github.com/gradosevic",
+          "since": "2023-05-26",
+          "description": "Main owner"
+        }
+      ]
+    },
+    {
+      "name": "Email",
+      "description": "Access to the email account for the domain loveaas.com, linked to my own Gmail account over Google Workspace",
+      "people": [
+        {
+          "name": "gradosevic",
+          "link": "https://github.com/gradosevic",
+          "since": "2023-05-26",
+          "description": "Main owner"
+        }
+      ]
+    }
+  ],
+  "needs": [
+    {
+      "description": "❗Need more enthusiastic people to join this project, take ownership and initiative and help with the development",
+      "when": "The sooner the better"
+    },
+    {
+      "description": "❗Need more enthusiastic to spread the word about the project and the idea behind it",
+      "when": "The sooner the better"
+    },
+    {
+      "description": "Need people to propose new projects to be listed in the directory",
+      "when": "Always"
+    },
+    {
+      "description": "The next domain renewal|https://prnt.sc/y2-u-sE2-ff-",
+      "when": "May 26, 2024"
+    }
+  ],
+  "payments": [
+    {
+      "date": "2023-05-26",
+      "amount": 9.76,
+      "currency": "USD",
+      "description": "Paid for the domain name loveaas.com",
+      "link": "https://prnt.sc/2MrDJvPSqgCX",
+      "status": "paid",
+      "by": "gradosevic",
+      "byLink": "https://github.com/gradosevic"
+    }
+  ],
+  "credits": [
+    {
+      "date": "2023-05-31",
+      "name": "Github",
+      "link": "https://github.com",
+      "description": "Many thanks to Github for making such a great platform for open source projects, so we can host this project for free. The collaboration is much easier with Github."
+    },
+    {
+      "date": "2023-05-31",
+      "name": "Jekyll",
+      "link": "https://github.com/jekyll",
+      "description": "Thanks Jekyll for creating such a great static site generator, the theme that runs on this site."
+    }
+  ],
+  "technology": [
+    {
+      "date": "2023-05-26",
+      "name": "Namecheap",
+      "link": "https://namecheap.com",
+      "description": [
+        "Domain set up and bought on Namecheap. The domain is set up to auto-renewal, so it will be renewed automatically.|https://prnt.sc/oWWqZC8SqkB7",
+        "The domain is pointing to Cloudflare.|https://prnt.sc/g0jX_8qoWSvv"
+      ]
+    },
+    {
+      "date": "2023-05-26",
+      "name": "Cloudflare",
+      "link": "https://cloudflare.com",
+      "description": [
+        "Attached loveaas.com domain to Cloudflare account|https://prnt.sc/fiSw4oDdIQn6",
+        "MX DNS linking to Google Workspace.|https://prnt.sc/8n1I_7CsrBUD",
+        "A records pointing to Github Pages.|https://prnt.sc/IJA_dEQX7Ztb"
+      ]
+    },
+    {
+      "name": "Email MX Setup",
+      "description": [
+        "Linked loveaas.com MX DNS records to Google Workplace where domain added as a secondary domain.|https://prnt.sc/c48wOdEXjyTk",
+        "We can add email forwarding, create a mailing group for more users or consider different email vendor for better sharing"
+      ]
+    },
+    {
+      "name": "Github Pages",
+      "link": "https://loveaas.com/",
+      "description": [
+        "The domain linked to Github Pages",
+        "Automatic push setup for the master branch, so every push to the master branch will be automatically deployed to the website.|https://prnt.sc/f6d27Rtgzqld"
+      ]
+    },
+    {
+      "name": "Github",
+      "link": "https://github.com/loveaas",
+      "description": [
+        "The Github account for loveaas and loveaas.com project"
+      ]
+    }
+  ],
+  "kudos": [
+    {
+      "date": "2023-05-31",
+      "name": "LightShot",
+      "link": "https://prnt.sc/",
+      "description": "The tool for capturing screenshots, used for capturing the screenshots of the website."
+    },
+    {
+      "date": "2023-06-01",
+      "name": "Jekyll - Minima theme",
+      "link": "https://github.com/jekyll/minima",
+      "description": "The theme used for this website. Very simple and clean, but it does the job. Thanks guys!"
+    }
+  ],
+  "news": [
+    {
+      "date": "2023-06-02",
+      "description": "Finalizing the first version of the website, adding the first projects to the directory and publishing the website."
+    }
+  ]
+}

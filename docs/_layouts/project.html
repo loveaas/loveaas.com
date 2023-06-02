@@ -2,34 +2,63 @@
 layout: default
 ---
 
-<div id="wrap-content" class="home">
+<div id="wrap-content" class="template-projects">
     <div class="loader"><i>Loading...</i></div>
     <div class="project">
         {%- if page.title -%}
         <h1 class="page-heading">
-            🌱 <span id="project-name">...</span>
+            🌱 <a id="project-name" href="#" class="no-emoji">...</a>
         </h1>
         <a id="source-code-link" class="no-emoji">⚓ Source code</a>
         <br><br>
         <h2>ℹ️ About </h2>
         <div id="project-description"></div>
 
-        <br>
-        <h2>🙏 Needs</h2>
-        <div id="project-needs"></div>
-
-        <br>
-        <h2>🧑 Assignments</h2>
-        <div id="project-assignments"></div>
+        <div id="wrap-credits">
+            <br>
+            <h2>🫶 Acknowledgements</h2>
+            <div id="project-credits"></div>
+        </div>
 
 
-        <br>
-        <h2>🛟 Donations</h2>
-        <div id="project-payment-history"></div>
+        <div id="wrap-needs">
+            <br>
+            <h2>🙏🏽 Needs</h2>
+            <div id="project-needs"></div>
+        </div>
 
-        <br>
-        <h2>🫶 Acknowledgements</h2>
-        <div id="project-credits"></div>
+
+        <div id="wrap-assignments">
+            <br>
+            <h2>🧑 Responsibilities</h2>
+            <div id="project-assignments"></div>
+        </div>
+
+
+        <div id="wrap-payment-history">
+            <br>
+            <h2>🛟 Donations</h2>
+            <div id="project-payment-history"></div>
+        </div>
+
+
+        <div id="wrap-technology">
+            <br>
+            <h2>⌨️ Technology</h2>
+            <div id="technology"></div>
+        </div>
+
+
+        <div id="wrap-kudos">
+            <h2>🧘🏿‍♂️️ Kudos</h2>
+            <div id="kudos"></div>
+        </div>
+
+        <div id="wrap-news">
+            <h2>📰 News</h2>
+            <div id="news"></div>
+        </div>
+
         {%- endif -%}
         {{ content }}
     </div>
@@ -42,6 +71,14 @@ layout: default
 <script>
     (async function () {
         var projectSlug = window.location.search.split('?slug=')[1];
+
+        var parseLinks = function(text){
+            if(text.indexOf('|') !== -1){
+                var d = text.split('|');
+                return d[0] + ' <a href="'+d[1]+'" target="_blank">(More info)</a>';
+            }
+            return text;
+        }
         var response = await fetch('/data/' + projectSlug + '.json');
         if (response.status === 404) {
             document.getElementById('project-name').innerHTML = 'Project not found';
@@ -55,7 +92,35 @@ layout: default
         document.getElementById('project-description').innerHTML = data.description;
         document.getElementById('source-code-link').setAttribute('href', data.sourceCodeLink);
 
-        var assignments = data.assignments;
+        if (!data.technology) {
+            document.getElementById('wrap-technology').style.display = 'none';
+        }
+        if (!data.kudos) {
+            document.getElementById('wrap-kudos').style.display = 'none';
+        }
+        if (!data.needs) {
+            document.getElementById('wrap-needs').style.display = 'none';
+        }
+        if (!data.owners) {
+            document.getElementById('wrap-assignments').style.display = 'none';
+        }
+        if (!data.payments) {
+            document.getElementById('wrap-payment-history').style.display = 'none';
+        }
+        if (!data.credits) {
+            document.getElementById('wrap-credits').style.display = 'none';
+        }
+        if (!data.news) {
+            document.getElementById('wrap-news').style.display = 'none';
+        }
+
+        if(data.link){
+            var pn = document.getElementById('project-name');
+            pn.setAttribute('href', data.link);
+            pn.setAttribute('target', '_blank');
+        }
+
+        var assignments = data.owners;
         var assignmentsHtml = '';
         for (var i in assignments) {
 
@@ -83,7 +148,7 @@ layout: default
         for (var i in data.needs) {
 
             needsHtml += '<li class="need">';
-            needsHtml += '<p>' + data.needs[i].description + '</p>';
+            needsHtml += '<p>' + parseLinks(data.needs[i].description) + '</p>';
             if(data.needs[i].when){
                 needsHtml += '<p>⌛ ' + data.needs[i].when + '</p>';
             }
@@ -99,7 +164,7 @@ layout: default
 
             var p = data.payments[i];
             payments += '<li>';
-            payments += '<p><b>/ ' + p.date +' / <a href="'+p.byLink+'" target="_blank">'+p.by+'</a> / ' + p.currency + ' ' + p.amount + '</b> > ' + p.description + ' <a href="https://example.com">(More info)</a></p>';
+            payments += '<span><b class="donation"> / ' + p.date +' / <a href="'+p.byLink+'" target="_blank">'+p.by+'</a> / ' + p.currency + ' ' + p.amount + '</b>' + p.description + ' <a target="_blank" href="'+p.link+'">(More info)</a></span>';
 
             payments += '</li>';
         }
@@ -108,63 +173,69 @@ layout: default
         document.getElementById('project-payment-history').innerHTML = payments;
 
 
-
+        if(!data.credits){
+            document.getElementById('wrap-credits').style.display = 'none';
+        }
         var credits = '';
         credits += '<ul class="credits">';
         for (var i in data.credits) {
 
             var c = data.credits[i];
             credits += '<li>';
-            credits += '<span><b> / ' + p.date +' / <a href="'+c.link+'" target="_blank">'+c.name+'</a> / </b> > ' + c.description + '</span>';
+            credits += '<span><b> / ' + c.date +' / <a href="'+c.link+'" target="_blank">'+c.name+'</a> / </b> ' + c.description + '</span>';
             credits += '</li>';
         }
         credits += '</ul>';
 
         document.getElementById('project-credits').innerHTML = credits;
 
+
+        var tech = '';
+        tech += '<ul class="tech">';
+        for (var i in data.technology) {
+
+            var t = data.technology[i];
+
+            var desc = '';
+            desc += '<ul class="tech-description">';
+            for (var j in t.description){
+                desc += '<li>' + parseLinks(t.description[j]) + '</li>';
+            }
+            desc += '</ul>';
+
+
+            tech += '<li>';
+            tech += '<span><b class="tech"> / ' + (t.link? '<a href="'+t.link+'" target="_blank">'+t.name+'</a>':t.name) + ' / ' + (t.byLink ? '<a href="'+t.byLink+'" target="_blank">'+t.by+'</a> / ':'') + '</b> ' + desc + '</span>';
+            tech += '</li>';
+        }
+        tech += '</ul>';
+
+        document.getElementById('technology').innerHTML = tech;
+
+        var kudos = '';
+        kudos += '<ul class="kudos">';
+        for (var i in data.kudos) {
+
+            var t = data.kudos[i];
+            kudos += '<li>';
+            kudos += '<span><b class="kudos"> / <a href="'+t.link+'" target="_blank">'+t.name+'</a> / </b> ' + t.description + '</span>';
+            kudos += '</li>';
+        }
+        kudos += '</ul>';
+
+        document.getElementById('kudos').innerHTML = kudos;
+
+        var news = '';
+        news += '<ul class="news">';
+        for (var i in data.news) {
+
+            var t = data.news[i];
+            news += '<li>';
+            news += '<span><b class="news"> / ' + t.date + ' / </b> ' + parseLinks(t.description) + '</span>';
+            news += '</li>';
+        }
+        news += '</ul>';
+        document.getElementById('news').innerHTML = news;
+
     })();
 </script>
-<style>
-    #wrap-content .not-found,
-    #wrap-content .project {
-        display: none;
-    }
-
-    #wrap-content .project a:not(.no-emoji):before {
-        content: "🔗";
-        display: inline-block;
-    }
-
-    #wrap-content.loaded .project {
-        display: block;
-    }
-
-    #wrap-content.loaded .loader {
-        display: none;
-    }
-
-    #wrap-content.not-found .project,
-    #wrap-content.not-found .loader {
-        display: none;
-    }
-
-    #wrap-content.not-found .not-found {
-        display: block;
-    }
-    h3{
-        font-weight: bold;
-    }
-
-    ul.credits{
-        list-style-type: none;
-    }
-    ul.credits li:before {
-        content: "❤";
-        display: inline-block;
-    }
-
-    #source-code-link{
-        font-size: 20px;
-    }
-
-</style>

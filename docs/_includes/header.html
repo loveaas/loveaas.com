@@ -1,13 +1,11 @@
 <header class="site-header">
-<style>
-    .post-content strong{
-        white-space: pre;
-    }
-</style>
     <div class="wrapper">
         {%- assign default_paths = site.pages | map: "path" -%}
         {%- assign page_paths = site.header_pages | default: default_paths -%}
         {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+        <a class="logo" href="/">
+            <img src="/assets/images/logo.png" alt="logo" width="50px" height="50px" />
+        </a>
         <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
 
         {%- if titles_size > 0 -%}

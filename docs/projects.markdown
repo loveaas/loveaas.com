@@ -1,24 +1,12 @@
 ---
 layout: page
-title: Projects' Directory
+title: 100% Complying Projects
 menu: 🪴 Projects
 permalink: /projects/
 ---
 
-- [Example](/project/?slug=example) - Example project
-- [Example 2](/project/?slug=example) - Example 2 project
-- [Example 3](/project/?slug=example) - Example 3 project
-- [Example 4](/project/?slug=example) - Example 4 project
-- [Example 5](/project/?slug=example) - Example 5 project
-
-
-<style>
-  .post-content ul{
-        list-style-type: none;
-    }
-    .post-content ul li:before {
-        content: "🌱";
-        margin-right: 5px;
-        display: inline-block;
-    }
-</style>
+| Project | Description |
+|-- | --- | 
+| 🌱 [loveaas.com](/project/?slug=loveaas.com)| The first official ❤aaS directory and informative page |
+| 🌱 [love-aas.appspot.com](/project/?slug=love-aas.appspot.com)| An easy way to share your thoughts with the ones you love |
+| 🌱 [❤aaS Community](/project/?slug=community)| The official ❤aaS community |

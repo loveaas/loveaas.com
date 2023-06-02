@@ -8,11 +8,12 @@ title: Welcome to Love as a Service
 layout: home
 ---
 
-Guided by our deeply held belief in love, generosity, and inclusivity, we - ❤aaS adopters, are cultivating a tech
+Guided by our deeply held belief in love, generosity, and inclusivity, we - **❤aaS** adopters, are cultivating a tech
 community that breaks
 away from traditional models.
 
-Embracing the Ubuntu philosophy of shared humanity, ❤aaS is a nurturing network of selfless, non-profit projects that
+Embracing the [Ubuntu philosophy](https://en.wikipedia.org/wiki/Ubuntu_philosophy){:target="_blank"} of shared humanity,
+**❤aaS** is a nurturing network of selfless, non-profit projects that
 transcend boundaries, serving all freely, regardless of community affiliation.
 
 Here, every line of code, every interaction, and every collaboration resonates with the power of love. Join us as we
@@ -34,7 +35,7 @@ these values and principles. It's a movement that is open to everyone who wants 
 
 ### **What are the values and principles of ❤aaS?**
 
-The ❤aaS philosophy is based on the values, postulates and principles defined in [❤aaS Manifesto](/manifesto).
+The **❤aaS** philosophy is based on the values, postulates and principles defined in [❤aaS Manifesto](/manifesto).
 
 ### **Who can participate in ❤aaS work?**
 
@@ -43,8 +44,8 @@ regardless of their affiliation.
 
 ### **What are the values of ❤aaS?**
 
-The values are the core of the ❤aaS philosophy. They are the guiding principles that define the ❤aaS community and the
-❤aaS projects, based on the [Manifesto](/manifesto).
+The values are the core of the **❤aaS** philosophy. They are the guiding principles that define the **❤aaS** community and the
+**❤aaS** projects, based on the [Manifesto](/manifesto).
 
 | Open source | Transparent | Privacy-focused | Community-driven |
 | No ads | No upsells | No self-Promotion | No exclusivity |
@@ -54,86 +55,94 @@ The values are the core of the ❤aaS philosophy. They are the guiding principle
 
 ### **Who is the owner of the ❤aaS, network and projects?**
 
-There is no owner. The ❤aaS network and projects are owned by the community. The ❤aaS community is a self-organized.
+There is no owner. The **❤aaS** network and projects are owned by the community. The **❤aaS** community is a self-organized.
 There is no hidden agenda. There is no hidden owner. There is no hidden profit. There is no hidden interest. There is no
 hidden anything. Everything is transparent.
 
 ### **But who owns the ❤aaS-related accounts?**
 
-Community strives to have no individual ownership of anything. There are some accounts that are needed to run the ❤aaS
-network and
-the owners of these accounts are the community members who are responsible for the accounts. The sole reason for this is
+Community strives to have no individual ownership of anything. Community can choose to assign some accounts that are needed to run the **❤aaS**
+network and the owners of these accounts are the community members who are responsible for the accounts. The sole reason for this is
 purely technical, to overcome security challenges. Community votes on the decisions regarding the accounts' assignments
-and prefers rotating ownership assignments with multiple members. Anyone can apply for any assignment.
+and prefers rotating ownership assignments with multiple members. Anyone can apply to take a responsibility and suggest any improvements in this area.
 
 ### **Who is the leader of the ❤aaS community?**
 
-There is no leader. The ❤aaS community is a self-organized community. Community members volunteer to do the work and
+There is no leader. The **❤aaS** community is a self-organized community. Community members volunteer to do the work and
 vote on the decisions.
 
 ### **How is ❤aaS governed?**
 
-The ❤aaS community is governed by the ❤aaS Manifesto and driven by the ❤aaS values and principles and the community
+The **❤aaS** community is governed by the **❤aaS** Manifesto and driven by the **❤aaS** values and principles and the community
 doing the whole work.
 
 ### **How is ❤aaS funded?**
 
-Since ❤aaS is a non-profit community, it is funded by donations from the community. The ❤aaS community is a self-funded
+Since **❤aaS** is a non-profit community, it is funded by donations from the community. The **❤aaS** community is a self-funded
 and it also accepts donations from external sources and supporters.
 
 ### **How ❤aaS handles finance?**
 
-The ❤aaS community is a self-organized community and it strives to be completely self-sustainable without any financial
+The **❤aaS** community is a self-organized community and it strives to be completely self-sustainable without any financial
 transactions. Financing can be solely made by individuals or legal entities that want to support the idea and purchasing
-resources directly with their own accounts for running ❤aaS. The resources can be listed on the ❤aaS website so anyone
-can make a direct purchase to fulfill ❤aaS needs.
+resources directly with their own accounts for running **❤aaS**. The resources can be listed on the **❤aaS** website so anyone
+can make a direct purchase to fulfill **❤aaS** needs.
 
 ### **How ❤aaS handles donations?**
 
 The donations are accepted by the community and redistributed to the projects and community or how the investors and
 community decide. The donations are accepted in any form, including also, hardware, software, services, etc.
 
-❤aaS strives not to handle any finance itself thus not being a subject to any financial regulations. The owners of the
-pieces of ❤aaS resources can be legally bound to individuals or legal entities that want to support the idea and serve the
+**❤aaS** strives not to handle any finance itself thus not being a subject to any financial regulations. The owners of the
+pieces of **❤aaS** resources can be legally bound to individuals or legal entities that want to support the idea and serve
+the
 resources on its behalf, serving as a piece of the whole picture.
 
 Since the ownership is delicate matter, the community strives to have no individual ownerships on anything, find
-alternative solutions to solve these challenges, finding solution in the decentralization and blockchain, thus sharing and supporting the idea from the collective mindset which is the end goal.
+alternative solutions to solve these challenges, finding solution in the decentralization and blockchain, thus sharing
+and supporting the idea from the collective mindset which is the end goal.
 
 ### **How can I participate in ❤aaS?**
 
-You can join ❤aaS in the development of the network, directory or projects listed in the directory. You can also join
-❤aaS by adopting the
-❤aaS philosophy in your own projects. If your project adopts 100% all the ❤aaS values and principles, you can apply to
-give it away and share your project with the community ande becoming official ❤aaS project. The project will be then
+You can join **❤aaS** in the development of the network, directory or projects listed in the directory. You can also join
+**❤aaS** by adopting the
+**❤aaS** philosophy in your own projects. If your project adopts 100% all the **❤aaS** values and principles, you can apply to
+give it away and share your project with the community ande becoming official **❤aaS** project. The project will be then
 listed here in the official
-❤aaS directory.
+**❤aaS** directory.
 
 ### **Does ❤aaS have any social accounts?**
 
-No, and it will never have. We don't look for any ways to promote ❤aaS. The only way to promote ❤aaS is by word of
-mouth. Users can share more about the ❤aaS philosophy and values and the ❤aaS projects individually with their friends
-and colleagues but ❤aaS as a community will never have any social accounts nor will invest any efforts into marketing
+No, and it will never have. We don't look for any ways to promote **❤aaS**. The only way to promote **❤aaS** is by word of
+mouth. Users can share more about the **❤aaS** philosophy and values and the **❤aaS** projects individually with their friends
+and colleagues but **❤aaS** as a community will never have any social accounts nor will invest any efforts into marketing
 itself.
 
-The only exception is the initial Github account, that's needed to run the ❤aaS directory and the ❤aaS network, so it's
-not bound to any individual account. The Github account is owned by the community and the community members are
+### **Where is ❤aaS community located?**
+
+The initial place is **❤aaS** Github account since it's needed to run the **❤aaS** directory and the **❤aaS** network, so
+it's not bound to any individual account. Future projects can be forked to this account to continue all living in the
+same place. The Github account is owned by the community and the community members are
 responsible for the account and its content, it's a starting point and it's a subject to change over time.
+
+We can also consider having a community account on some community platform, later. We strive to have a single place for
+the community to gather
+everyone in the same place if there's a need for it in the future.
 
 ### **What is loveaas.com?**
 
-This is a website that serves as a directory of all ❤aaS projects. It is also a place where you can learn more about the
-❤aaS philosophy and values and be updated on the news in the community. It serves as a starting point for anyone who
-wants to join the ❤aaS community, but the community can decide on its destiny or to move it to another domain or to
+This is a website that serves as a directory of all **❤aaS** projects. It is also a place where you can learn more about the
+**❤aaS** philosophy and values and be updated on the news in the community. It serves as a starting point for anyone who
+wants to join the **❤aaS** community, but the community can decide on its destiny or to move it to another domain or to
 another place. It is not owned by anyone, it is owned by the community. Any similar projects and directories are
-welcomed to join the ❤aaS network.
+welcomed to join the **❤aaS** network.
 
 ## How does it sound to you?
 
-This is how the ❤aaS philosophy is different from the traditional tech model, serving as a guiding light for all ❤aaS
+This is how the **❤aaS** philosophy is different from the traditional tech model, serving as a guiding light for all **❤aaS**
 projects in the service of humanity.
 
 Welcome to a future shaped by the forces of
 love and generosity.
 
-Welcome to ❤aaS - *Love as a service to humanity*.
+Welcome to **❤aaS** - *Love as a service to humanity*.

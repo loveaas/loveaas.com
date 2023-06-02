@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: ❤aaS - Love as a Service
+title: Love as a Service
 email: people@loveaas.com
 description: >- # this means to ignore newlines until "baseurl:"
   ❤aaS, share love as a service.
