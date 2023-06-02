@@ -1,4 +1,4 @@
-# ❤aaS (Love as a Service) Directory - loveaas.com
+# ❤aaS (Love as a Service) Directory - [loveaas.com](https://loveaas.com)
 The ❤aaS is the first official directory and informational site.
 
 - Site is hosted on Github Pages
