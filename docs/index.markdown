@@ -12,8 +12,7 @@ Guided by our deeply held belief in love, generosity, and inclusivity, we - **�
 community that breaks
 away from traditional models.
 
-Embracing the [Ubuntu philosophy](https://en.wikipedia.org/wiki/Ubuntu_philosophy){:target="_blank"} of shared humanity,
-**❤aaS** is a nurturing network of selfless, non-profit projects that
+Embracing the [Ubuntu philosophy](https://en.wikipedia.org/wiki/Ubuntu_philosophy){:target="_blank"} of shared humanity, and inspired by SaaS methodology, **❤aaS** is a nurturing network of selfless, non-profit projects that
 transcend boundaries, serving all freely, regardless of community affiliation.
 
 Here, every line of code, every interaction, and every collaboration resonates with the power of love. Join us as we
