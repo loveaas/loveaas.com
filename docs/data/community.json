@@ -1,21 +1,21 @@
 {
   "name": "❤aaS Community",
   "version": "1.0",
-  "description": "This is a draft project explaining ❤aaS community. The community is something that we need to have in order to discuss and take actions on developing the whole LOVEaaS Network. Please click on the link to join discussion. Thank you!",
-  "sourceCodeLink": "https://github.com/loveaas/loveaas.com/issues/2",
-  "link": "https://github.com/loveaas/loveaas.com/issues/2",
+  "description": "The official ❤aaS community. The community is something that we have in order to discuss and take actions on developing the whole LOVEaaS Network. Please click on the link to join discussion. Thank you!",
+  "sourceCodeLink": "https://github.com/loveaas/loveaas/discussions",
+  "link": "https://github.com/loveaas/loveaas/discussions",
   "needs": [
     {
-      "description": "Need to create an official ❤aaS community",
-      "when": "The sooner the better"
+      "description": "Let's bring all ideas in official ❤aaS community",
+      "when": "Ongoing"
     }
   ],
   "credits": [
     {
       "date": "2023-05-31",
       "name": "Everyone",
-      "link": "https://github.com/loveaas/loveaas.com/issues/2",
-      "description": "Thank you everyone for considering this project and helping with the development and discussing this topic on Github."
+      "link": "https://github.com/loveaas/loveaas/discussions",
+      "description": "Thank you everyone for participating into discussion and planning of ❤aaS"
     }
   ]
 }
