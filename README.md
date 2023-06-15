@@ -9,11 +9,13 @@ Using [Jekyll Minima](https://github.com/jekyll/minima) theme
 
 To use locally
 ```
+cd docs
+
 #install dependencies
 bundle install
 
 #build site
-bundle exec jekyll serve 
+bundle exec jekyll build 
 
 #start local server
 bundle exec jekyll serve 
